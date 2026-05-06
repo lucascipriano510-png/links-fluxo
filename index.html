@@ -1,86 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fluxo Outlet - Links Oficiais</title>
+    <!-- Tailwind CSS para estilo rápido e responsivo -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Ícones FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
+        /* Fundo escuro premium */
         body {
-            background-color: #121212;
-            background-image: radial-gradient(circle at top, #1f1f1f 0%, #0a0a0a 100%);
-            color: white;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0a0a0a;
+            background-image: radial-gradient(circle at top, #1a1a1a, #0a0a0a);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
+        /* Efeito de brilho na logo */
+        .logo-container {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.2);
+        }
+        /* Animação suave nos botões */
         .btn-link {
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .btn-link:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px -10px rgba(16, 185, 129, 0.4);
+        }
+        .btn-store:hover {
+            box-shadow: 0 10px 20px -10px rgba(16, 185, 129, 0.5);
         }
         .btn-wa:hover {
-            box-shadow: 0 10px 20px -10px rgba(37, 211, 102, 0.4);
-        }
-        /* Efeito de brilho na foto de perfil */
-        .profile-glow {
-            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+            box-shadow: 0 10px 20px -10px rgba(37, 211, 102, 0.5);
         }
     </style>
 </head>
-<body class="p-6 antialiased">
+<body class="flex flex-col items-center justify-center p-6 text-white antialiased">
 
-    <div class="w-full max-w-md mx-auto flex flex-col items-center">
+    <main class="w-full max-w-md flex flex-col items-center text-center z-10">
         
-        <!-- Foto de Perfil (Placeholder que podes trocar pela logo) -->
-        <div class="w-24 h-24 rounded-full border-2 border-emerald-500 overflow-hidden mb-5 profile-glow flex items-center justify-center bg-black">
-            <span class="text-xl font-black italic tracking-tighter text-white">FLUXO<span class="text-emerald-500">.</span></span>
+        <!-- LOGO -->
+        <div class="logo-container w-28 h-28 rounded-full border-2 border-emerald-500 overflow-hidden mb-6 bg-black flex items-center justify-center relative">
+            <!-- AQUI: Puxando a tua foto com o nome exato que está no GitHub -->
+            <img src="logo.jpg.jpg" alt="Fluxo Outlet Logo" class="w-full h-full object-cover">
         </div>
 
-        <!-- Bio do Instagram -->
-        <h1 class="text-2xl font-bold mb-2">@fluxooutlet034</h1>
-        <p class="text-gray-400 text-sm mb-8 text-center leading-relaxed">
-            LOJA MASCULINA GRIFFE E SURF 🧢<br>
-            ENVIAMOS P/ TODO O BRASIL 🚚📲<br>
-            <span class="text-emerald-500 font-semibold text-xs mt-1 block">Uberaba - MG</span>
-        </p>
+        <!-- BIO -->
+        <h1 class="text-2xl font-bold tracking-wide mb-2">@fluxooutlet034</h1>
+        <div class="text-gray-400 text-sm leading-relaxed space-y-1 mb-8">
+            <p class="font-medium text-gray-300">LOJA MASCULINA DE GRIFE 🧢</p>
+            <p>ENVIAMOS P/ TODO O BRASIL 🚚📲</p>
+            <p class="text-emerald-500 font-semibold text-xs pt-1">Uberaba - MG</p>
+        </div>
 
-        <!-- Lista de Links -->
-        <div class="w-full space-y-4 flex flex-col">
+        <!-- LINKS -->
+        <div class="w-full flex flex-col gap-4">
             
-            <!-- Link 1: Loja Principal -->
-            <a href="https://fluxooutlet.com.br" target="_blank" class="btn-link relative flex items-center justify-center w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-2xl overflow-hidden">
-                <i class="fas fa-shopping-bag absolute left-6 text-xl"></i>
-                <span class="tracking-wide">ACEDER À LOJA OFICIAL</span>
+            <!-- Botão da Loja (Destaque) -->
+            <a href="https://fluxooutlet.com.br" target="_blank" rel="noopener noreferrer" 
+               class="btn-link btn-store relative flex items-center justify-center w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-xl overflow-hidden group">
+                <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <i class="fas fa-store absolute left-6 text-xl"></i>
+                <span class="tracking-wider">ACESSAR A LOJA OFICIAL</span>
             </a>
 
-            <!-- Link 2: WhatsApp -->
-            <a href="https://wa.me/5534999680605" target="_blank" class="btn-link btn-wa relative flex items-center justify-center w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-2xl">
+            <!-- Botão do WhatsApp -->
+            <a href="https://wa.me/5534999680605" target="_blank" rel="noopener noreferrer"
+               class="btn-link btn-wa relative flex items-center justify-center w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-xl">
                 <i class="fab fa-whatsapp absolute left-6 text-2xl"></i>
-                <span class="tracking-wide">FALAR NO WHATSAPP</span>
-            </a>
-
-            <!-- Link 3: Rastreio (Exemplo futuro) -->
-            <a href="#" class="btn-link relative flex items-center justify-center w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-gray-300 font-semibold py-4 px-6 rounded-2xl mt-2">
-                <i class="fas fa-truck-fast absolute left-6 text-lg text-gray-500"></i>
-                <span class="tracking-wide">RASTREAR A MINHA ENCOMENDA</span>
+                <span class="tracking-wider">FALAR NO WHATSAPP</span>
             </a>
 
         </div>
+    </main>
 
-        <!-- Rodapé Discreto -->
-        <div class="mt-12 text-zinc-600 text-xs font-bold tracking-widest uppercase">
-            Fluxo Outlet © 2026
-        </div>
-
-    </div>
+    <!-- Rodapé -->
+    <footer class="mt-16 text-zinc-600 text-xs font-bold tracking-widest uppercase">
+        Fluxo Outlet © 2026
+    </footer>
 
 </body>
 </html>
