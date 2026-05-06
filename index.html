@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo Outlet - Links Oficiais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            background-image: radial-gradient(circle at top, #1f1f1f 0%, #0a0a0a 100%);
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-link {
+            transition: all 0.3s ease;
+        }
+        .btn-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -10px rgba(16, 185, 129, 0.4);
+        }
+        .btn-wa:hover {
+            box-shadow: 0 10px 20px -10px rgba(37, 211, 102, 0.4);
+        }
+        /* Efeito de brilho na foto de perfil */
+        .profile-glow {
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+        }
+    </style>
+</head>
+<body class="p-6 antialiased">
+
+    <div class="w-full max-w-md mx-auto flex flex-col items-center">
+        
+        <!-- Foto de Perfil (Placeholder que podes trocar pela logo) -->
+        <div class="w-24 h-24 rounded-full border-2 border-emerald-500 overflow-hidden mb-5 profile-glow flex items-center justify-center bg-black">
+            <span class="text-xl font-black italic tracking-tighter text-white">FLUXO<span class="text-emerald-500">.</span></span>
+        </div>
+
+        <!-- Bio do Instagram -->
+        <h1 class="text-2xl font-bold mb-2">@fluxooutlet034</h1>
+        <p class="text-gray-400 text-sm mb-8 text-center leading-relaxed">
+            LOJA MASCULINA GRIFFE E SURF 🧢<br>
+            ENVIAMOS P/ TODO O BRASIL 🚚📲<br>
+            <span class="text-emerald-500 font-semibold text-xs mt-1 block">Uberaba - MG</span>
+        </p>
+
+        <!-- Lista de Links -->
+        <div class="w-full space-y-4 flex flex-col">
+            
+            <!-- Link 1: Loja Principal -->
+            <a href="https://fluxooutlet.com.br" target="_blank" class="btn-link relative flex items-center justify-center w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-2xl overflow-hidden">
+                <i class="fas fa-shopping-bag absolute left-6 text-xl"></i>
+                <span class="tracking-wide">ACEDER À LOJA OFICIAL</span>
+            </a>
+
+            <!-- Link 2: WhatsApp -->
+            <a href="https://wa.me/5534999680605" target="_blank" class="btn-link btn-wa relative flex items-center justify-center w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-2xl">
+                <i class="fab fa-whatsapp absolute left-6 text-2xl"></i>
+                <span class="tracking-wide">FALAR NO WHATSAPP</span>
+            </a>
+
+            <!-- Link 3: Rastreio (Exemplo futuro) -->
+            <a href="#" class="btn-link relative flex items-center justify-center w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-gray-300 font-semibold py-4 px-6 rounded-2xl mt-2">
+                <i class="fas fa-truck-fast absolute left-6 text-lg text-gray-500"></i>
+                <span class="tracking-wide">RASTREAR A MINHA ENCOMENDA</span>
+            </a>
+
+        </div>
+
+        <!-- Rodapé Discreto -->
+        <div class="mt-12 text-zinc-600 text-xs font-bold tracking-widest uppercase">
+            Fluxo Outlet © 2026
+        </div>
+
+    </div>
+
+</body>
+</html>
